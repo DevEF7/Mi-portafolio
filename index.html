@@ -1,222 +1,296 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Portafolio de Elmer Franz Nina Guarachi, desarrollador de software con experiencia en aplicaciones web y móviles.">
-    <meta name="keywords" content="Portafolio, Elmer Franz Nina Guarachi, desarrollador de software, aplicaciones web, aplicaciones móviles, proyectos de software">    
-    <meta name="author" content="Elmer Franz Nina Guarachi">
+        <!-- ✅ SEO & Open Graph Meta Tags -->
+        <title>Mi Portafolio</title>
+        <meta name="description" content="Portafolio de Elmer Franz Nina Guarachi, desarrollador de software con experiencia en aplicaciones web y móviles.">
+        <meta name="keywords" content="Portafolio, Elmer Franz Nina Guarachi, desarrollador de software, aplicaciones web, aplicaciones móviles, proyectos de software">    
+        <meta name="author" content="Elmer Franz Nina Guarachi">
 
-    <meta property="og:title" content="Portafolio de Elmer Franz Nina Guarachi">
-    <meta property="og:description" content="Portafolio de Elmer Franz Nina Guarachi, desarrollador de software con experiencia en aplicaciones web y móviles.">
-    <meta property="og:image" content="https://example.com/portafolio-image.jpg">
-    <meta property="og:url" content="https://example.com/portafolio">
+        <meta property="og:title" content="Portafolio de Elmer Franz Nina Guarachi">
+        <meta property="og:description" content="Portafolio de Elmer Franz Nina Guarachi, desarrollador de software con experiencia en aplicaciones web y móviles.">
+        <meta property="og:image" content="https://example.com/portafolio-image.jpg">
+        <meta property="og:url" content="https://example.com/portafolio">  
+        
 
-    <title>MI Portafolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <header>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <header>
         <div class="container">
             <div class="navbar">
-                <div class="logo"> Elmer Franz Nina Guarachi </div>
-                <nav>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#acercade">Acerca de</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </nav>
+            <div class="logo"> Elmer Franz Nina Guarachi </div>
+            <nav>
+                <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+                <li><a href="#servicios">Mis Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
             </div>
-            <br>
-            <h1>Bienvenido a mi Portafolio</h1>  
-
-        </div>
-        
-    </header>
-    
-    <main>
-        <section id="inicio">
-            
+        </div>      
+        </header>
+        <main>
+        <section id="inicio" aria-label="Presentación">
             <div class="container person">
-               
-                <div class="person-content">
-                    <span class="person-badge">Desarrollador de Software</span>
-                    <h1>Hola, soy <br> <strong>Elmer Franz Nina Guarachi</strong> </h1>
-                    
-                    <br>
-                    <div class="actions">
-                        <a href="#servicios" class="btn btn--primary">Ver mis proyectos</a>
-                        <a href="#contacto" class="btn btn--secondary">Contacteme</a>
-                    </div>
-                    <aside class="person-img">
-                        <div class="float-card card--a">React</div>
-                        <div class="float-card card--b">NodeJs</div>
-                        <div class="float-card card--c">Python</div>
-                        <div class="float-card card--d">Java</div>
-                        <div class="avatar">
-                            <div class="avatar-interior">EN</div>
-
-                        </div>
-                    </aside>
-
+            <div class="person-content">
+                <span class="person-badge">Disponible para proyectos</span>
+                <h1>Hola, soy <br> <strong>Elmer Franz Nina Guarachi</strong> </h1>
+                <p> Soy un desarrollador de software de aplicaciones web y móviles. Me especializo en el desarrollo de soluciones innovadoras y eficientes. He trabajado en diversos proyectos, desde pequeñas aplicaciones hasta grandes sistemas. Mi pasión por la tecnología me impulsa a seguir aprendiendo y mejorando mis habilidades constantemente.</p>
+                <div class="actions">
+                <a href="#servicios" class="btn btn--primary">Ver proyectos</a>
+                <a href="#contacto" class="btn btn--secondary">Contáctame</a>            
                 </div>
             </div>
+            <aside class="person-img" aria-hidden="true">
+                <div class="float-card card--a">React</div>
+                <div class="float-card card--b">Nodejs</div>
+                <div class="float-card card--c">Python</div>
+                <div class="float-card card--d">Flutter</div>
+                <div class="float-card card--e">Dart</div>
+                <div class="avatar">
+                <div class="avatar-interior">HC</div>
+                </div>
+            </aside>
+            </div>
         </section>
-    
-        <section id="acercade">
+        <section id="acercade" aria-label="Acerca de mí">
             <div class="container about">
-                <h2>Acerca de mi</h2>
-                <p>Soy un desarrollador de software con experiencia en la creación de aplicaciones web y móviles. Me especializo en el desarrollo de soluciones innovadoras y eficientes. He trabajado en diversos proyectos, desde pequeñas aplicaciones hasta grandes sistemas empresariales. Mi pasión por la tecnología me impulsa a seguir aprendiendo y mejorando mis habilidades constantemente.</p>
-                <div class="skill-grid">
-                    <article class="skill-card skill--backend">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node (nestjs, express)</li>
-                            <li>Php (Laravel)</li>
-                            <li>Python (Django, Flask)</li>
-                            <li>Java (Spring Boot)</li>
-                            <li>Base de Datos (MongoDB, MySQL)</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card skill--frontend">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>React Native</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card skill--base-datos">
-                        <h3>Base de datos</h3>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                            <li>PostgreSQL</li>
-                           
-                        </ul>
-                    </article>
-
-                </div>
-               
+            <h2>Acerca de mí</h2>
+            <p>
+                Soy un desarrollador de software con experiencia en la creación de aplicaciones web y móviles. Me especializo en el desarrollo de soluciones innovadoras y eficientes. He trabajado en diversos proyectos, desde pequeñas aplicaciones hasta grandes sistemas empresariales. Mi pasión por la tecnología me impulsa a seguir aprendiendo y mejorando mis habilidades constantemente.
+            </p>
+            <div class="skill-grid" >
+                <article class="skill-card skill--backend">
+                <span class="skill-icon">⚙️</span>
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node (nestjs, express)</li>
+                    <li>Php (Laravel)</li>
+                    <li>Python (Django, Flask)</li>
+                    <li>Java (Spring Boot)</li>
+                </ul>
+                </article>
+                <article class="skill-card skill--frontend">
+                <span class="skill-icon">🎨</span>
+                <h3>Frontend</h3>
+                <ul>
+                                <li>React</li>
+                                <li>Vue.js</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                </article>
+                <article class="skill-card skill--database">
+                <span class="skill-icon">🗄️</span>
+                <h3>Base de Datos</h3>
+                <ul>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                            
+                            </ul>
+                </article>
+            </div>          
             </div>
         </section>
-        <br>
         <section id="servicios">
-            <div class="container proyectos">
-                <h2>Proyectos implementados</h2>
-                <p>He implementado diversos proyectos relacionadas con el desarrollo de software. Algunos de los proyectos en los que he trabajado incluyen:</p>
+            <div class="container projects">
+            <h2>Proyectos implementados</h2>
+            <p>He implementado diversos proyectos relacionadas con el desarrollo de software. Algunos de los proyectos en los que he trabajado incluyen:</p>
+                    
+            <div class="projects-grid">
                 
+                <article class="project-card">
+                    <div class="project-img">♟</div>
+                    <div class="project-info">
+                        <h3>Programa de Resolver Cubo de Rubik (Java)</h3>
+                        <p>
+                        Desarrollo de un programa para resolver el cubo de Rubik utilizando Java. Implementación de algoritmos de búsqueda y optimización para encontrar la solución más eficiente.
+                        </p>
+                        <div>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Algoritmos de Búsqueda</span>
+                            <span class="tech-badge">NetBeans</span>
 
-                <div class="proyectos-list">
-                    <div class="proy-1">Sistema de Gestión de Tareas (Node.js, React)
-                        <p>Desarrollo de una aplicación web para la gestión de tareas utilizando Node.js y React. </p>
+                        </div>
                     </div>
-                    <div class="proy-2">API RESTful para Sistema de Reservas (Express.js)
-                        <p>Creación de una API RESTful para un sistema de reservas utilizando Express.js.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">📱</div>
+                    <div class="project-info">
+                        <h3>Aplicación Móvil de Calculadora (Flutter)</h3>
+                        <p>
+                        Desarrollo de una aplicación móvil de calculadora utilizando Flutter. La aplicación incluye funciones básicas de cálculo, así como un diseño intuitivo y moderno con soporte para modo oscuro.
+                        </p>
+                        <div>
+                            <span class="tech-badge">Flutter</span>
+                            <span class="tech-badge">Dark Mode</span>
+                        </div>
                     </div>
-                    <div class="proy-3">Sistema de Autenticación y Autorización (JWT)
-                        <p>Implementación de un sistema de autenticación y autorización utilizando JWT.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">📜</div>
+                    <div class="project-info">
+                        <h3>Sistema de Gestión de Tareas (Node.js, React)</h3>
+                        <p>
+                        Desarrollo de una aplicación web para la gestión de tareas utilizando Node.js y React. La aplicación permite a los usuarios crear, editar y eliminar tareas, así como organizar las tareas en diferentes categorías y establecer recordatorios.
+                        </p>
+                        <div>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
                     </div>
-                    <div class="proy-4">Aplicación Móvil de Calculadora (React Native)
-                        <p>Desarrollo de una aplicación móvil para la gestión de finanzas personales utilizando React Native.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">🤵</div>
+                    <div class="project-info">
+                        <h3>Pagina Web estatica de sastreria</h3>
+                        <p>Desarrollo de una página web estática para una sastrería utilizando html. La página incluye secciones para mostrar servicios y formulario de contacto.</p>
+                        <div>
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
                     </div>
-                    <div class="proy-5">Programa de Resolver Cubo de Rubik (Java)
-                        <p>Desarrollo de un programa para resolver el cubo de Rubik utilizando Java.</p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">💻</div>
+                    <div class="project-info">
+                        <h3>Sistema de Autenticación y Autorización (JWT)</h3>
+                        <p>
+                        Implementación de un sistema de autenticación y autorización utilizando JWT.</p>
+                        <div>
+                            <span class="tech-badge">JWT</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
                     </div>
-                </div>
+                </article>
+
+            </div>
             </div>
         </section>
-        <section id="contacto">
+        <section id="contacto" aria-label="Contacto">
             <div class="container contact">
-                <div class="contact-form">
-                    <h2 class="section-title">Cantactenos</h2>
-                    <div class="contacto-info">
-                        <div class="contacto-item">
-                        <span class="contacto-icon">📧</span>
-                        <div>
-                            <strong>Email</strong>
-                            <p>tuemail@ejemplo.com</p>
-                        </div>
-                        </div>
-                        <div class="contacto-item">
-                        <span class="contacto-icon">📍</span>
-                        <div>
-                            <strong>Direccion</strong>
-                            <p>Calle Bugambilla nro 303, Zona Obrajes, La Paz, Bolivia</p>
-                        </div>
-                        </div>
-                        <div class="contacto-item">
-                        <span class="contacto-icon">📞</span>
-                        <div>
-                            <strong>Respuesta</strong>
-                            <p>Menos de 48 horas</p>
-                        </div>
-                        </div>
-
+            <h2 class="section-title">Cantactenos</h2>
+            <div class="contact-layout">
+                <div class="contact-info">
+                <div class="contacto-item">
+                    <span class="contacto-icon">📧</span>
+                    <div>
+                    <strong>Email</strong>
+                    <p>elmer_nina@ejemplo.com</p>
                     </div>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required placeholder="tú@ejemplo.com">
-                        </div>
-                        <div class="from-group">
-                            <label for="asunto">Presupuesto Estimado</label>
-                            <span class="rango-valor" id="rango-valor">$1000 - $5000</span>
-                            <input type="range" id="presupuesto" name="presupuesto" min="1000" max="5000" step="100" required value="3000">
-
-                        </div>
-
-                        
-                        <div class="form-group">
-                            <label for="servicio">Tipo de servicio</label>
-                            <input
-                                type="search"
-                                id="servicio"
-                                name="servicio"
-                                list="servicios-list"
-                                placeholder="Busca un servicio..."
-                            />
-                            <datalist id="servicios-list">
-                                <option value="Desarrollo Web Full Stack">
-                                <option value="API REST / Back-End">
-                                <option value="Diseño UI / Front-End">
-                                <option value="Base de Datos">
-                                <option value="Consultoría Técnica">
-                            </datalist>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Enviar mensaje →</button>
-                    </form>
-                    <p style="margin-top: 1rem; font-size: 0.8rem; text-align: center; color: var(--text-secondary)">* Recibirás respuesta en menos de 48h.</p>
+                </div>
+                <div class="contacto-item">
+                    <span class="contacto-icon">📍</span>
+                    <div>
+                    <strong>Direccion</strong>
+                    <p>Av. Union - Kenko, El Alto, Bolivia</p>
+                    </div>
+                </div>
+                <div class="contacto-item">
+                    <span class="contacto-icon">📞</span>
+                    <div>
+                    <strong>Respuesta</strong>
+                    <p>Menos de 72 horas</p>
+                    </div>
+                </div>
+                </div>
+                <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                        placeholder="Tu nombre"
+                    />
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="tú@ejemplo.com"
+                    />
+                    </div>
+                    <div class="form-group">
+                    <label for="presupuesto">Presupuestos Estimado:
+                        <span class="rango-valor" id="rango-valor">$500</span>
+                    </label>
+                    <input
+                        type="range"
+                        id="presupuesto"
+                        name="presupuesto"
+                        min="100"
+                        max="5000"
+                        step="100"
+                        value="500"
+                    />
+                    <div class="range-labels">
+                        <span>$100</span><span>$5000</span>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Tipo de servicio</label>
+                        <input
+                        type="search"
+                        id="servicio"
+                        name="servicio"
+                        list="servicios-list"
+                        placeholder="Busca un servicio..."
+                        />
+                        <datalist id="servicios-list">
+                        <option value="Desarrollo Web Full Stack">
+                        <option value="API REST / Back-End">
+                        <option value="Diseño UI / Front-End">
+                        <option value="Base de Datos">
+                        <option value="Consultoría Técnica">
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="4"
+                        required
+                        placeholder="Cuéntame sobre tu proyecto..."
+                    ></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensaje →</button>
+                </form>
                 </div>
             </div>
- 
-        </section>
-    
-    </main>
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/elmerfranznina" target="_blank">Github</a>
-                <a href="https://linkedin.com/in/elmerfranznina" target="_blank">LinkedIn</a>
-                <a href="https://facebook.com/elmerfranznina" target="_blank">Facebook</a>
             </div>
-            
+        </section>
+        </main>
+        <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+            <span class="logo">Elmer Franz Nina Guarachi</span>
+            <p>Desarrollador Web, El Alto, Bolivia</p>
+            </div>
+            <nav class="social-links">
+            <a href="https://github.com/elmerfranznina" target="_blank">Github</a>
+                    <a href="https://linkedin.com/in/elmerfranznina" target="_blank">LinkedIn</a>
+                    <a href="https://facebook.com/elmerfranznina" target="_blank">Facebook</a>
+            </nav>
         </div>
-
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-</body>
+        <p class="footer-copy">&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        </footer>
+        
+    </body>
 </html>

@@ -14,11 +14,9 @@
         <meta property="og:description" content="Portafolio de Elmer Franz Nina Guarachi, desarrollador de software con experiencia en aplicaciones web y móviles.">
         <meta property="og:image" content="https://example.com/portafolio-image.jpg">
         <meta property="og:url" content="https://example.com/portafolio">  
-
         
 
         <link rel="stylesheet" href="assets/css/styles.css" />
-        
     </head>
     <body>
         <header>
@@ -30,12 +28,9 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#acercade">Acerca de</a></li>
                 <li><a href="#servicios">Mis Proyectos</a></li>
-                <li><a href="#apis">APIs</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                
                 </ul>
             </nav>
-            <button id="theme-toggle" class="theme-btn" aria-label="Modo oscuro">🌙</button>
             </div>
         </div>      
         </header>
@@ -64,17 +59,12 @@
             </div>
         </section>
         <section id="acercade" aria-label="Acerca de mí">
-            <div class="container about-grid">
-                <header class="section-header">
-                    <h2>Acerca de mí</h2>
-                    <p>
-                       Apasionado por construir aplicaciones web modernas.
-                    </p>
-                </header>
-                <div class="about-bio">
-                    <p>Soy un desarrollador de software con experiencia en la creación de aplicaciones web y móviles. Me especializo en el desarrollo de soluciones innovadoras y eficientes. He trabajado en diversos proyectos, desde pequeñas aplicaciones hasta grandes sistemas empresariales. Mi pasión por la tecnología me impulsa a seguir aprendiendo y mejorando mis habilidades constantemente.</p>
-                </div>
-            <div class="skills-grid" aria-label="Lenguajes y tecnologías">
+            <div class="container about">
+            <h2>Acerca de mí</h2>
+            <p>
+                Soy un desarrollador de software con experiencia en la creación de aplicaciones web y móviles. Me especializo en el desarrollo de soluciones innovadoras y eficientes. He trabajado en diversos proyectos, desde pequeñas aplicaciones hasta grandes sistemas empresariales. Mi pasión por la tecnología me impulsa a seguir aprendiendo y mejorando mis habilidades constantemente.
+            </p>
+            <div class="skill-grid" >
                 <article class="skill-card skill--backend">
                 <span class="skill-icon">⚙️</span>
                 <h3>Backend</h3>
@@ -95,7 +85,7 @@
                                 <li>HTML/CSS</li>
                             </ul>
                 </article>
-                <article class="skill-card skill--db">
+                <article class="skill-card skill--database">
                 <span class="skill-icon">🗄️</span>
                 <h3>Base de Datos</h3>
                 <ul>
@@ -107,25 +97,15 @@
             </div>          
             </div>
         </section>
-        <section id="servicios" aria-label="Proyectos implementados">
-            <div class="container">
-                <header class="section-header">
-                    <h2>Proyectos implementados</h2>
-                    <p>He implementado diversos proyectos relacionadas con el desarrollo de software. Algunos de los proyectos en los que he trabajado incluyen:</p>
-                </header>
-            <div class="filter-bar" role="group" aria-label="Filtrar proyectos">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="frontend">Frontend</button>
-                <button class="filter-btn" data-filter="backend">Backend</button>
-                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
-              
-           
-            </div>
-            <p class="projects-meta"><span id="project-count"></span> proyectos encontrados</p>
-            <div class="projects-grid" id="projects-grid">
+        <section id="servicios">
+            <div class="container projects">
+            <h2>Proyectos implementados</h2>
+            <p>He implementado diversos proyectos relacionadas con el desarrollo de software. Algunos de los proyectos en los que he trabajado incluyen:</p>
+                    
+            <div class="projects-grid">
                 
-            <!--   <article class="project-card">
-                    <div class="project-img">♟</div>
+                <article class="project-card">
+                    
                     <div class="project-info">
                         <h3>Programa de Resolver Cubo de Rubik (Java)</h3>
                         <p>
@@ -141,7 +121,7 @@
                 </article>
 
                 <article class="project-card">
-                    <div class="project-img">📱</div>
+                   
                     <div class="project-info">
                         <h3>Aplicación Móvil de Calculadora (Flutter)</h3>
                         <p>
@@ -155,7 +135,7 @@
                 </article>
 
                 <article class="project-card">
-                    <div class="project-img">📜</div>
+                 
                     <div class="project-info">
                         <h3>Sistema de Gestión de Tareas (Node.js, React)</h3>
                         <p>
@@ -169,7 +149,7 @@
                 </article>
 
                 <article class="project-card">
-                    <div class="project-img">🤵</div>
+                   
                     <div class="project-info">
                         <h3>Pagina Web estatica de sastreria</h3>
                         <p>Desarrollo de una página web estática para una sastrería utilizando html. La página incluye secciones para mostrar servicios y formulario de contacto.</p>
@@ -182,7 +162,7 @@
                 </article>
 
                 <article class="project-card">
-                    <div class="project-img">💻</div>
+                    
                     <div class="project-info">
                         <h3>Sistema de Autenticación y Autorización (JWT)</h3>
                         <p>
@@ -192,105 +172,13 @@
                             <span class="tech-badge">Node.js</span>
                         </div>
                     </div>
-                </article>--> 
-
-
+                </article>
 
             </div>
             </div>
         </section>
- <!-- ✅ Sesión 4: PokeAPI -->
-
-      <section id="apis" aria-label="Consumo de APIs públicas">
-        <div class="container">
-          <header class="section-header">
-            <h2>APIs Públicas en Vivo</h2>
-            <p>Ejemplos reales de Fetch API, <code>async/await</code> y <code>Promise.all</code>.</p>
-          </header>
-
-          <div class="apis-grid">
-
-            <!-- ✅ Sesión 4: PokeAPI – 6 peticiones en paralelo con Promise.all -->
-            <div class="api-panel" id="poke-section">
-              <div class="api-panel__header">
-                <span class="api-badge">PokeAPI</span>
-                <h3>Pokémon con <code>Promise.all()</code></h3>
-                <p>Carga 6 Pokémon <strong>en paralelo</strong>. Cada tarjeta es una promesa independiente.</p>
-              </div>
-              <div id="poke-grid" class="poke-grid"></div>
-              <button id="poke-next" class="btn btn--outline btn--sm">Cargar siguientes →</button>
-            </div>
-
-            <!-- ✅ Sesión 4: REST Countries – Fetch GET + destructuring de respuesta -->
-            <div class="api-panel">
-              <div class="api-panel__header">
-                <span class="api-badge">REST Countries</span>
-                <h3>Buscar país</h3>
-                <p>Fetch GET con <strong>async/await</strong> y <strong>destructuring</strong> del objeto JSON.</p>
-              </div>
-              <div class="country-search-box">
-                <input
-                  type="search"
-                  id="country-search"
-                  placeholder="Escribe un país… ej: Bolivia"
-                  aria-label="Buscar país"
-                />
-              </div>
-              <div id="country-result" class="country-result"></div>
-            </div>
-
-          </div>
-          <div class="api-table-wrap">
-            <h3 class="api-table-title">APIs Públicas cubiertas en el curso</h3>
-            <table class="api-table">
-              <thead>
-                <tr>
-                  <th>API</th>
-                  <th>Uso en el portafolio</th>
-                  <th>Método</th>
-                  <th>Formato</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="https://jsonplaceholder.typicode.com" target="_blank" rel="noopener">JSONPlaceholder</a></td>
-                  <td>Proyectos dinámicos + envío de formulario (Fetch POST)</td>
-                  <td><span class="method-badge method--get">GET</span> <span class="method-badge method--post">POST</span></td>
-                  <td>JSON</td>
-                </tr>
-                <tr>
-                  <td><a href="https://pokeapi.co" target="_blank" rel="noopener">PokeAPI</a></td>
-                  <td>Galería con <code>Promise.all()</code> paralelo</td>
-                  <td><span class="method-badge method--get">GET</span></td>
-                  <td>JSON</td>
-                </tr>
-                <tr>
-                  <td><a href="https://restcountries.com" target="_blank" rel="noopener">REST Countries</a></td>
-                  <td>Buscador en tiempo real con <code>async/await</code></td>
-                  <td><span class="method-badge method--get">GET</span></td>
-                  <td>JSON</td>
-                </tr>
-                <tr>
-                  <td><a href="https://openweathermap.org/api" target="_blank" rel="noopener">OpenWeather</a></td>
-                  <td>Clima en tiempo real (requiere API key gratuita)</td>
-                  <td><span class="method-badge method--get">GET</span></td>
-                  <td>JSON</td>
-                </tr>
-                <tr>
-                  <td><a href="https://www.themoviedb.org/documentation/api" target="_blank" rel="noopener">The Movie DB</a></td>
-                  <td>Catálogo de películas (requiere API key gratuita)</td>
-                  <td><span class="method-badge method--get">GET</span></td>
-                  <td>JSON</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-    </section>
-
-    <section id="contacto" aria-label="Contacto">
-        <div class="container contact">
+        <section id="contacto" aria-label="Contacto">
+            <div class="container contact">
             <h2 class="section-title">Cantactenos</h2>
             <div class="contact-layout">
                 <div class="contact-info">
@@ -386,8 +274,8 @@
                 </form>
                 </div>
             </div>
-         </div>
-    </section>
+            </div>
+        </section>
         </main>
         <footer>
         <div class="container footer-grid">
@@ -403,18 +291,6 @@
         </div>
         <p class="footer-copy">&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
         </footer>
-        <script>
-        // Actualizar valor del range en tiempo real
-        const range = document.getElementById('presupuesto');
-        const val   = document.getElementById('rango-valor');
-        if (range && val) {
-            range.addEventListener('input', () => {
-            val.textContent = '$' + Number(range.value).toLocaleString();
-            });
-        }
-
-        </script>
-        <script src="assets/js/app.js"></script>
+        
     </body>
-    
 </html>

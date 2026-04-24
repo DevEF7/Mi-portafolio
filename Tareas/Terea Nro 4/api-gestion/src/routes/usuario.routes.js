@@ -121,3 +121,5 @@ routes.patch('/usuarios/:id', controllerUsuario.updateUsuario);
 routes.delete('/usuarios/:id', controllerUsuario.deleteUsuario);
 
 module.exports = routes;
+
+
